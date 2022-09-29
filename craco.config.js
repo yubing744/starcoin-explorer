@@ -2,8 +2,19 @@
 // https://stackoverflow.com/questions/57070052/create-react-app-typescript-3-5-path-alias
 
 const CracoAlias = require("craco-alias");
+const NodePolyfillPlugin = require('node-polyfill-webpack-plugin');
 
 module.exports = {
+  webpack: {
+    configure: (config) => {
+      return config;
+    },
+    plugins: [
+      new NodePolyfillPlugin({
+        excludeAliases: ['console', 'Buffer'],
+      }),
+    ]
+  },
   plugins: [
     {
       plugin: CracoAlias,
