@@ -14,6 +14,7 @@ import Loading from '@/common/Loading';
 import './index.css';
 import store from './rootStore';
 import AppRouter from './router';
+import { startWasiTask } from './utils/move';
 
 const MainLayout = (props: any) => {
   return (
@@ -64,6 +65,8 @@ function App() {
   if (mode === 'dark') {
     theme.palette.background.default = '#212121';
   }
+
+  startWasiTask()
 
   return <HelmetProvider> <ColorModeContext.Provider value={colorMode}>
     <StyledEngineProvider injectFirst>

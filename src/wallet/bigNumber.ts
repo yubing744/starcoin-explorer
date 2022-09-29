@@ -163,7 +163,7 @@ export function formatNumberMeta(
   }
 
   const num = bigNum(value);
-  const digits = num.decimalPlaces();
+  const digits = num.decimalPlaces() as number;
 
   let toFixedPrecision = precisions;
   if (isNumber(toFixedPrecision) && percentStyle) {
