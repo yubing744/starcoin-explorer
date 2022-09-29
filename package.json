@@ -49,13 +49,6 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.13.14",
-    "@babel/helper-builder-react-jsx": "^7.12.13",
-    "@babel/helper-builder-react-jsx-experimental": "^7.12.11",
-    "@babel/plugin-syntax-import-meta": "^7.10.4",
-    "@babel/plugin-transform-react-jsx": "^7.13.12",
-    "@babel/preset-env": "^7.13.15",
-    "@babel/preset-react": "^7.13.13",
     "@starcoin/move-js": "^0.6.1",
     "@types/classnames": "^2.2.11",
     "@types/file-saver": "^2.0.5",
@@ -68,7 +61,6 @@
     "axios": "^0.21.1",
     "babel-plugin-lodash": "^3.3.4",
     "babel-plugin-named-asset-import": "^0.3.7",
-    "babel-plugin-transform-import-meta": "^2.2.0",
     "bignumber.js": "^9.0.1",
     "craco-alias": "^2.1.1",
     "eslint": "^7.17.0",

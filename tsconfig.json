@@ -34,7 +34,7 @@
     "src/**/*.tsx",
     "src/**/*.ts",
     "src/**/*.d.ts"
-, "src/utils/move.js"  ],
+  ],
   "exclude": [
     "node_modules",
     "build"
